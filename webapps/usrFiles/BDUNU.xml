@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="WCSDeploymentManifest2015Final.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<CameraTrapDeployment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="WCSDeploymentManifest2015Final.xsd">
+    <ProjectId>BO-14</ProjectId>
+    <ProjectName>Mid-Madidi River Jaguar Survey 2009</ProjectName>
+    <ProjectObjectives>Dry Season Survey of mid-Madidi River (Jun-Aug) in 2009</ProjectObjectives>
+    <PublishDate>2015-06-25</PublishDate>
+    <ProjectOwners>
+        <ProjectOwner>WCS</ProjectOwner>
+        <ProjectOwnerEmail>wcsemail</ProjectOwnerEmail>
+        <ProjectOwner>Owner2</ProjectOwner>
+        <ProjectOwnerEmail>Owner2Email</ProjectOwnerEmail>
+    </ProjectOwners>
+    <PrincipalInvestigators>
+        <PrincipalInvestigator>Robert Wallace</PrincipalInvestigator>
+        <PrincipalInvestigatorEmail>rwallace@wcs.org</PrincipalInvestigatorEmail>
+        <PrincipalInvestigator>PI2</PrincipalInvestigator>
+        <PrincipalInvestigatorEmail>PI2Email</PrincipalInvestigatorEmail>
+    </PrincipalInvestigators>
+    <ProjectContacts>
+        <ProjectContact>Guido Ayala</ProjectContact>
+        <ProjectContactEmail>gayala@wcs.org</ProjectContactEmail>
+        <ProjectContact>ProjectContact2</ProjectContact>
+        <ProjectContactEmail>ProjectContact2Email</ProjectContactEmail>
+    </ProjectContacts>
+    <ProjectLatitude>37.62999</ProjectLatitude>
+    <ProjectLongitude>-79.298753</ProjectLongitude>
+    <CountryCode>BOL</CountryCode>
+    <ProjectDataAccessandUseConstraints>TBD</ProjectDataAccessandUseConstraints>
+    <SubProjectId></SubProjectId>
+    <SubProjectName></SubProjectName>
+    <SubProjectDesign></SubProjectDesign>
+    <PlotName></PlotName>
+    <PlotTreatment></PlotTreatment>
+    <CameraDeploymentID>PDM-1-09-1-205</CameraDeploymentID>
+    <CameraSiteName>PDM-1-09-1-205</CameraSiteName>
+    <Originators>
+        <OriginatorName>testORiginator1</OriginatorName>
+        <OriginatorName>testOriginator2</OriginatorName>
+    </Originators>
+    <ProposedCameraDeploymentBeginDate></ProposedCameraDeploymentBeginDate>
+    <ProposedCameraDeploymentEndDate></ProposedCameraDeploymentEndDate>
+    <ProposedLatitude></ProposedLatitude>
+    <ProposedLongitude></ProposedLongitude>
+    <CameraDeploymentBeginDate>2009-05-26</CameraDeploymentBeginDate>
+    <CameraDeploymentEndDate>2009-06-21</CameraDeploymentEndDate>
+    <CameraDeploymentNotes></CameraDeploymentNotes>
+    <ActualLatitude>-12.886</ActualLatitude>
+    <ActualLongitude>-67.599</ActualLongitude>
+    <CameraFailureDetails>Functioning</CameraFailureDetails>
+    <Bait>No Bait</Bait>
+    <BaitDescription></BaitDescription>
+    <Feature>Not Entered</Feature>
+    <FeatureMethodology></FeatureMethodology>
+    <AccessConstraints>LC</AccessConstraints>
+    <CameraID>205</CameraID>
+    <DetectionDistance>9</DetectionDistance>
+    <QuietPeriodSetting>5</QuietPeriodSetting>
+    <ImageResolutionSetting>3.1</ImageResolutionSetting>
+    <SensitivitySetting>Medium</SensitivitySetting>
+    <ImageSequence>
+        <ImageSequenceId>PDM-1-09-1-205s1</ImageSequenceId>
+        <ImageSequenceBeginTime>2009-05-27T11:40:00</ImageSequenceBeginTime>
+        <ImageSequenceEndTime>2009-05-27T11:41:00</ImageSequenceEndTime>
+        <VolunteerIdentifications>
+            <Identification>
+                <IUCNId></IUCNId>
+                <TSNId></TSNId>
+                <SpeciesScientificName></SpeciesScientificName>
+                <SpeciesCommonName></SpeciesCommonName>
+                <Count></Count>
+                <Age></Age>
+                <Sex></Sex>
+                <IndividualId></IndividualId>
+                <AnimalRecognizable></AnimalRecognizable>
+                <IndividualAnimalNotes></IndividualAnimalNotes>
+            </Identification>
+        </VolunteerIdentifications>
+        <ResearcherIdentifications>
+            <Identification>
+                <IUCNId>42462</IUCNId>
+                <TSNId>180175</TSNId>
+                <SpeciesScientificName>Aramides cajanea</SpeciesScientificName>
+                <SpeciesCommonName></SpeciesCommonName>
+                <Count></Count>
+                <Age></Age>
+                <Sex></Sex>
+                <IndividualId></IndividualId>
+                <AnimalRecognizable></AnimalRecognizable>
+                <IndividualAnimalNotes></IndividualAnimalNotes>
+            </Identification>
+            <Identification>
+                <IUCNId>1</IUCNId>
+                <TSNId>8</TSNId>
+                <SpeciesScientificName>test identification</SpeciesScientificName>
+                <SpeciesCommonName>test identification</SpeciesCommonName>
+                <Count>1</Count>
+                <Age></Age>
+                <Sex></Sex>
+                <IndividualId></IndividualId>
+                <AnimalRecognizable></AnimalRecognizable>
+                <IndividualAnimalNotes></IndividualAnimalNotes>
+            </Identification>
+        </ResearcherIdentifications>
+        <Image>
+            <ImageId>8754_205_1_2a</ImageId>
+            <ImageFileName>8754_205_1_2a.JPG</ImageFileName>
+            <ImageDateTime>2009-05-27T11:40:00</ImageDateTime>
+            <ImageOrder>1</ImageOrder>
+            <ImageInterestRanking>None</ImageInterestRanking>
+            <digitalOrigin>born digital</digitalOrigin>
+            <PhotoType>animal</PhotoType>
+            <PhotoTypeIdentifications>
+                <PhotoTypeIdentifiedBy>MarÃ­a Viscarra</PhotoTypeIdentifiedBy>
+                <PhotoTypeIdentifiedBy>Guido Ayala</PhotoTypeIdentifiedBy>
+            </PhotoTypeIdentifications>
+            <RestrictionsonAccess></RestrictionsonAccess>
+            <EmbargoPeriodEndDate></EmbargoPeriodEndDate>
+            <ImageUseRestrictions></ImageUseRestrictions>
+            <ImageIdentifications>
+                <Identification>
+                    <IUCNId>42462</IUCNId>
+                    <TSNId>180175</TSNId>
+                    <SpeciesScientificName>Aramides cajanea</SpeciesScientificName>
+                    <SpeciesCommonName></SpeciesCommonName>
+                    <Count></Count>
+                    <Age></Age>
+                    <Sex></Sex>
+                    <IndividualId></IndividualId>
+                    <AnimalRecognizable></AnimalRecognizable>
+                    <IndividualAnimalNotes></IndividualAnimalNotes>
+                </Identification>
+            </ImageIdentifications>
+        </Image>
+    </ImageSequence>
+    <ImageSequence>
+        <ImageSequenceId>PDM-1-09-1-205s2</ImageSequenceId>
+        <ImageSequenceBeginTime>2009-05-27T12:11:12</ImageSequenceBeginTime>
+        <ImageSequenceEndTime>2009-05-27T12:12:12</ImageSequenceEndTime>
+        <VolunteerIdentifications>
+            <Identification>
+                <IUCNId></IUCNId>
+                <TSNId></TSNId>
+                <SpeciesScientificName></SpeciesScientificName>
+                <SpeciesCommonName></SpeciesCommonName>
+                <Count></Count>
+                <Age></Age>
+                <Sex></Sex>
+                <IndividualId></IndividualId>
+                <AnimalRecognizable></AnimalRecognizable>
+                <IndividualAnimalNotes></IndividualAnimalNotes>
+            </Identification>
+        </VolunteerIdentifications>
+        <ResearcherIdentifications>
+            <Identification>
+                <IUCNId>123</IUCNId>
+                <TSNId>180699</TSNId>
+                <SpeciesScientificName>Mitu tuberosa </SpeciesScientificName>
+                <SpeciesCommonName></SpeciesCommonName>
+                <Count></Count>
+                <Age></Age>
+                <Sex></Sex>
+                <IndividualId></IndividualId>
+                <AnimalRecognizable></AnimalRecognizable>
+                <IndividualAnimalNotes></IndividualAnimalNotes>
+            </Identification>
+         </ResearcherIdentifications>
+        <Image>
+            <ImageId>8754_205_1_3a</ImageId>
+            <ImageFileName>8754_205_1_3a.JPG</ImageFileName>
+            <ImageDateTime>2009-05-27T12:11:12</ImageDateTime>
+            <ImageOrder>1</ImageOrder>
+            <ImageInterestRanking>None</ImageInterestRanking>
+            <digitalOrigin>born digital</digitalOrigin>
+            <PhotoType>animal</PhotoType>
+            <PhotoTypeIdentifications>
+                <PhotoTypeIdentifiedBy>MarÃ­a Viscarra</PhotoTypeIdentifiedBy>
+                <PhotoTypeIdentifiedBy>Guido Ayala</PhotoTypeIdentifiedBy>
+            </PhotoTypeIdentifications>
+            <RestrictionsonAccess></RestrictionsonAccess>
+            <EmbargoPeriodEndDate></EmbargoPeriodEndDate>
+            <ImageUseRestrictions></ImageUseRestrictions>
+            <ImageIdentifications>
+                <Identification>
+                    <IUCNId>123</IUCNId>
+                    <TSNId>180699</TSNId>
+                    <SpeciesScientificName>Mitu tuberosa</SpeciesScientificName>
+                    <SpeciesCommonName></SpeciesCommonName>
+                    <Count></Count>
+                    <Age></Age>
+                    <Sex></Sex>
+                    <IndividualId></IndividualId>
+                    <AnimalRecognizable></AnimalRecognizable>
+                    <IndividualAnimalNotes></IndividualAnimalNotes>
+                </Identification>
+            </ImageIdentifications>
+        </Image>
+        <Image>
+            <ImageId>4318s2i2</ImageId>
+            <ImageFileName>4318s2i2.JPG</ImageFileName>
+            <ImageDateTime>2009-05-27T12:11:12</ImageDateTime>
+            <ImageOrder>2</ImageOrder>
+            <ImageInterestRanking>None</ImageInterestRanking>
+            <digitalOrigin></digitalOrigin>
+            <PhotoType/>
+            <PhotoTypeIdentifications>
+                <PhotoTypeIdentifiedBy></PhotoTypeIdentifiedBy>
+            </PhotoTypeIdentifications>
+            <RestrictionsonAccess></RestrictionsonAccess>
+            <EmbargoPeriodEndDate></EmbargoPeriodEndDate>
+            <ImageUseRestrictions></ImageUseRestrictions>
+            <ImageIdentifications>
+                <Identification>
+                    <IUCNId></IUCNId>
+                    <TSNId></TSNId>
+                    <SpeciesScientificName></SpeciesScientificName>
+                    <SpeciesCommonName></SpeciesCommonName>
+                    <Count></Count>
+                    <Age></Age>
+                    <Sex></Sex>
+                    <IndividualId></IndividualId>
+                    <AnimalRecognizable></AnimalRecognizable>
+                    <IndividualAnimalNotes></IndividualAnimalNotes>
+                </Identification>
+            </ImageIdentifications>
+        </Image>
+    </ImageSequence>
+</CameraTrapDeployment>
+

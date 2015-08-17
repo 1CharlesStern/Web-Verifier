@@ -1,0 +1,3 @@
+File,Location,Pass(Y/N),Error,ErrorLocation,Row,Column
+EPWNL.xml,/Users/beth/Desktop/maven/wwwxmlverifier/webapps/usrFiles/EPWNL.xml,N,Invalid File location,N/A,N/A,N/A
+EPWNL.xml,/Users/beth/Desktop/maven/wwwxmlverifier/webapps/usrFiles/EPWNL.xml,Y,N/A,N/A,N/A,N/A
