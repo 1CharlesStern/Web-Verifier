@@ -1,0 +1,1 @@
+The second of two webpages.  Called as a result of the servlet receiving a POST method.  This webpage displays the results of the validation process and gives an option to download a detailed log of the process or return to the previous webpage to validate a second file.

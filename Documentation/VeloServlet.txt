@@ -1,0 +1,39 @@
+Public Class VeloServlet extends VelocityViewServlet:
+
+Short for Velocity Servlet, it handles http requests from the web browser and returns a response based on the velocity template that invoked it.  It is capable of handling GET and POST requests.
+
+Dependencies:
+java.io.*
+javax.servlet.*
+javax.servlet.http.*
+org.apache.velocity.VelocityContext
+org.apache.velocity.app.VelocityEngine
+org.apache.velocity.tools.view.VelocityViewServlet
+
+Constructors:
+None. This servlet is ran inside of a servlet container, and as such does not require a constructor.
+
+Methods:
+public void init() throws ServletException
+Initializes the servlet.  Creates directories for user files and log files, named usrFiles and logFiles respectively.  It also creates a blank file to represent the file submitted by the user.  If these directories cannot be created, the program will throw an IOException.
+
+public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+Handles Http GET requests.  This method will return the velocity template that includes the POST form as MIME type text/html.
+
+public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+Handles Http POST requests and reformats them to pass onto the WebVerifier.  The method will read the file via request.getReader() and write the contents to the blank user file.  It will then pass the user file onto execute().
+
+public void execute(PrintWriter w, File xml) throws FileNotFoundException
+Executes WebVerifier with the specified PrintWriter and File.  If initialized by the doPost method, this will be the user file and the webpage.  The entirety of the program output will be contained within a html <p> element.  The program will throw a FileNotFoundException if it cannot create its log.
+
+public void destroy()
+Method required by all servlets upon their destruction.  This method does nothing.
+
+public String makeId()
+Creates a unique 5-character ID for the current session.  The log will be saved under the same ID.
+
+public String getId()
+Returns the ID for the current file.
+
+public void setId(String str)
+Sets the Id to a certain string.

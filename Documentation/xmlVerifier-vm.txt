@@ -1,0 +1,1 @@
+The first of two webpages.  The servlet will return this page automatically when it detects a GET request.  It lets the user select which organization to verify against, choose a file to upload, and upload it.  Uploading the file initializes the servlet getPost method and so moves to the next webpage.
