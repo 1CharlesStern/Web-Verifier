@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2015 Smithsonian Institution.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -25,7 +25,9 @@
  * license terms. For a complete copy of all copyright and license terms, including
  * those of third-party libraries, please see the product release notes.
  *
- */
+ * @author Charles Stern 1Charlesstern@gmail.com
+ * @version 1.0
+ * @since 2015-8-21*/
 package edu.si;
 
 import org.xml.sax.ErrorHandler;
@@ -46,13 +48,21 @@ import java.util.List;
 
 public class WebVerifier {
     //The words validate/validator and verify/verifier are used interchangeably in this context.
+
+    /**
+     * On initialization checks if the file is valid before validation
+     * @param place where the user's file is on the server file system
+     * @param log xmlVerifierlog.csv, located on the server file system.  Can be downloaded by the user after the program completes.
+     * @param out Prints directly to the webpage in a <p></p> format
+     * @param isWCS Which organization is the manifest from?
+     */
 	public WebVerifier(String place, PrintWriter log, PrintWriter out, boolean isWCS){
 		final String nl = System.getProperty("line.separator");
 		if(place.length()<4) {
             out.append("Invalid Filename on file.").append(nl);
             log.println("N"+","+"Invalid filename"+","+"N/A"+","+"N/A"+","+"N/A");
             return;
-        }                                       //statements exist to crash the program smoothly
+        }
         if(!place.substring(place.length()-4, place.length()).equals(".xml")){
 			out.append("This file has an incorrect file extension. Skipping file.").append(nl);
             log.println("N"+","+"Invalid file extension"+","+"N/A"+","+"N/A"+","+"N/A");
@@ -60,31 +70,32 @@ public class WebVerifier {
 	try {
 		Verify(place, log, out, isWCS);
         //this exception should not happen ever
-	} catch (FileNotFoundException e) {
-		out.append("System error: Failed to load validation file.").append(nl);
-        e.printStackTrace();
 	}
 	  catch (SAXException e1){
 		  out.append("Error reading file. It may be corrupt or invalid.").append(nl);
           log.println("N" + "," + "Corrupt/Invalid file" + "," + "N/A" + "," + "N/A" + "," + "N/A");
 	  }
-    //This should also never happen
-	 catch (java.net.URISyntaxException e2){
-		 out.append("System error: Invalid validation file.").append(nl);
-         e2.printStackTrace();
-	}
  /*   catch (Exception e1){                                   //DEBUG PURPOSES ONLY
         StackTraceElement[] e3=e1.getStackTrace();
         for(int x=0;x<e3.length;x++)
             out.append(e3[x].getLineNumber()+e3[x].getMethodName()+" "+e3[x].getClassName());
     }*/
 	}
-	public void Verify(String place, PrintWriter log, PrintWriter out, boolean isWCS) throws SAXException, FileNotFoundException, java.net.URISyntaxException
+
+    /**
+     * Validation and logging
+     * @param place Where the user's file is on the server file system
+     * @param log xmlVerifierlog.csv, located on the server file system.  Can be downloaded by the user after the program completes.
+     * @param out Prints directly to the webpage in a <p></p> format
+     * @param isWCS Which organization is the manifest from?
+     * @throws SAXException If the user file somehow is not valid XML
+     */
+	public void Verify(String place, PrintWriter log, PrintWriter out, boolean isWCS) throws SAXException
 	{
 		String line, line2;
         boolean errIsNull=false;
         boolean tron=true;
-        boolean sch=false;
+        boolean sch;
         boolean result=true;
         InputStream Schematron;
         InputStream XSD;
@@ -184,15 +195,15 @@ public class WebVerifier {
 		}
 		  if(exceptions.size()==0)
               sch=true;
-		  else
+		  else{sch = false;
               for (int i = 1; i < exceptions.size(); i++) {
                   Error.add(xsdError(exceptions.get(i).toString()));
                   Row.add(xsdRow(exceptions.get(i).toString()));
                   Column.add(xsdCol(exceptions.get(i).toString()));
                   ErrLoc.add("N/A");
-                  if (!xsdError(exceptions.get(i).toString()).equals(""))
-                      sch = false;
+                  if (!xsdError(exceptions.get(i).toString()).equals("")) ;
                   //For loop returns errors
+              }
               }
         if((sch && tron)&& sch)
             out.append("File has PASSED validation.").append(nl);
@@ -210,8 +221,11 @@ public class WebVerifier {
              log.println("N" + "," + Error.get(l) + "," + ErrLoc.get(l) + "," + Row.get(l) + "," + Column.get(l));
     }
 
-    //      END OF VERIFY METHOD
-
+    /**
+     * Converts Schematron instructions from Inputstream to File so it can be processed by third-party application
+     * @param in InputStream of instructions
+     * @return File containing instructions (file deletes on completion)
+     */
 	public File convertToFile(InputStream in) {
         File tronFile = new File("temp.sch");
         tronFile.deleteOnExit();
@@ -234,26 +248,47 @@ public class WebVerifier {
         return tronFile;
     }
 
-    //All following methods chop up the error streams from the verifiers and sort them into Lists to be exported to the log
+    /**
+     * Fetches column number of error from output
+     * @param str the output
+     * @return the column number
+     */
     String xsdCol(String str){
         return str.substring(str.indexOf(":", str.indexOf("columnNumber"))+1, str.indexOf(";", str.indexOf("columnNumber")));
     }
-    //Except this method, which escapes commas and quotes in the Lists.
+
+    /**
+     * Puts every item in each List in quotes to prevent comma issues in .csv
+     * @param list List that needs to be fool-proofed
+     * @return Same List with brand new quotes around each element
+     */
     List<String> bustCommas(List<String> list){
         for(int k=0;k<list.size();k++){
             list.set(k,"\""+list.get(k)+"\"");
         }
      return list;
     }
-
+    /**
+     * Fetches line number of error from output
+     * @param str the output
+     * @return the line number
+     */
     String xsdRow(String str){
        return str.substring(str.indexOf("lineNumber:")+11,str.indexOf(";", str.indexOf("lineNumber:")-1));
     }
-
+    /**
+     * Fetches error summary from output
+     * @param str the output
+     * @return the summary
+     */
     String xsdError(String str){
         return str.substring(str.indexOf(":", str.indexOf("columnNumber:")+14)+1,str.length());
     }
-
+    /**
+     * Fetches error summary from output
+     * @param str the output
+     * @return the summary
+     */
     String tronErr(String str){
         String p1=""; String p2="";
         if(str.contains("svrl:text"))
@@ -262,19 +297,32 @@ public class WebVerifier {
             return str;
         return p1+p2;
     }
-
+    /**
+     * Fetches column number of error from output
+     * @param str the output
+     * @return the column number
+     */
     String tronCol(String str){
             String result= str.substring(str.indexOf("col=")+4, str.lastIndexOf(">"));
         while(result.contains("\""))
             result=result.substring(0,result.indexOf("\""))+result.substring(result.indexOf("\"")+1, result.length());
         return result;}
-
+    /**
+     * Fetches line number of error from output
+     * @param str the output
+     * @return the line number
+     */
     String tronRow(String str){
             String result= str.substring(str.indexOf("line=")+5,str.lastIndexOf("col=")-1);
         while(result.contains("\""))
             result=result.substring(0,result.indexOf("\""))+result.substring(result.indexOf("\"")+1, result.length());
         return result;}
 
+    /**
+     * Fetches the location of the error in the file
+     * @param str the output
+     * @return error location
+     */
     String tronErrLoc(String str){
       return str.substring(str.indexOf("location=\"")+10, str.indexOf("\"", str.indexOf("location=\"")+11));
     }
