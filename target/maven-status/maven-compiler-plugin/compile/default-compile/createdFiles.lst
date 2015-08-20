@@ -20,6 +20,7 @@ org/apache/velocity/runtime/parser/node/ASTElseStatement.class
 org/apache/velocity/runtime/parser/node/ASTGTNode.class
 org/apache/velocity/runtime/directive/Define.class
 org/apache/velocity/runtime/VelocimacroFactory.class
+edu/si/WebVerifier.class
 org/apache/velocity/tools/view/tools/AbstractPagerTool.class
 org/apache/velocity/tools/view/WebappUberspector.class
 org/apache/velocity/app/tools/VelocityFormatter$VelocityAlternator.class
@@ -201,7 +202,6 @@ org/apache/velocity/tools/view/DataInfo.class
 org/apache/velocity/tools/view/UiDependencyTool$Group.class
 org/apache/velocity/texen/util/PropertiesUtil.class
 org/apache/velocity/tools/view/UiDependencyTool$GroupRule.class
-edu/si/XMLvServ.class
 org/apache/velocity/runtime/directive/Break.class
 org/apache/velocity/tools/config/Property.class
 org/apache/velocity/app/tools/VelocityFormatter.class
@@ -231,6 +231,7 @@ org/apache/velocity/app/event/EventHandlerMethodExecutor.class
 org/apache/velocity/tools/config/OldXmlFactoryConfigurationRuleSet$DeprecationRule.class
 org/apache/velocity/exception/TemplateInitException.class
 org/apache/velocity/util/introspection/Info.class
+edu/si/VeloServlet.class
 org/apache/velocity/util/introspection/UberspectImpl$VelMethodImpl.class
 org/apache/velocity/app/event/implement/InvalidReferenceInfo.class
 org/apache/velocity/tools/view/tools/ViewRenderTool.class
@@ -351,6 +352,7 @@ org/apache/velocity/runtime/log/ServletLogChute.class
 org/apache/velocity/tools/generic/IteratorTool.class
 org/apache/velocity/tools/view/tools/ContextTool.class
 org/apache/velocity/tools/generic/ClassTool$CallableSub.class
+edu/si/WebVerifier$1.class
 org/apache/velocity/runtime/parser/node/ASTParameters.class
 org/apache/velocity/anakia/NodeList$AttributeXMLOutputter.class
 org/apache/velocity/runtime/log/LogChute.class
@@ -376,7 +378,6 @@ org/apache/velocity/util/SimplePool.class
 org/apache/velocity/runtime/RuntimeLogger.class
 org/apache/velocity/texen/ant/TexenTask.class
 org/apache/velocity/tools/view/ServletUtils$1.class
-edu/si/xmlWebVerifier$1.class
 org/apache/velocity/tools/view/ToolboxManager.class
 org/apache/velocity/io/VelocityWriter.class
 org/apache/velocity/runtime/resource/loader/ResourceLoader.class
@@ -418,7 +419,6 @@ org/apache/velocity/context/InternalEventContext.class
 org/apache/velocity/runtime/resource/Resource.class
 org/apache/velocity/runtime/directive/Scope$Info.class
 org/apache/velocity/tools/view/XMLToolboxManager.class
-edu/si/xmlWebVerifier.class
 org/apache/velocity/tools/config/OldXmlFactoryConfigurationRuleSet$XhtmlRule.class
 org/apache/velocity/runtime/parser/node/ASTWord.class
 org/apache/velocity/tools/generic/FieldTool.class

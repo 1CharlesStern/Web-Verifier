@@ -1,4 +1,4 @@
-#*/*
+<!--#*/*
  * Copyright 2015 Smithsonian Institution.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -24,23 +24,31 @@
  * This distribution includes several third-party libraries, each with their own
  * license terms. For a complete copy of all copyright and license terms, including
  * those of third-party libraries, please see the product release notes.
- */*#
+ */*#-->
 <!DOCTYPE html>
  <html>
   <head>
   <meta charset="UTF-8"/>
+  <style type="text/css">
+  body{
+      font-size:16px;
+    }
+  </style>
   </head>
   <body>
    <h1>Please upload a file.</h1>
    <br />
    <form method="post" enctype="multipart/form-data" action="Verifiercomplete.vm" id="xmlFile">
-        <input type="file" name="${id}" accept=".xml"/>
+          <input type="file" name="xmlFile"></input>
+          <br/>
         <br/>
         <input type="radio" name="type" value="eMammal" checked>eMammal Validation</input>
         <br/>
+        <br/>
         <input type="radio" name="type" value="WCS">WCS Validation</input>
         <br/>
-        <input type="submit"/>
+        <br/>
+        <input type="submit" value="Submit File" size="60"/>
    </form>
   </body>
  </html>

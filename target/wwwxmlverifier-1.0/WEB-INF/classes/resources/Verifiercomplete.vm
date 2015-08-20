@@ -1,4 +1,4 @@
-#*/*
+<!--#*/*
  * Copyright 2015 Smithsonian Institution.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -24,7 +24,7 @@
  * This distribution includes several third-party libraries, each with their own
  * license terms. For a complete copy of all copyright and license terms, including
  * those of third-party libraries, please see the product release notes.
- */*#
+ */*#-->
 <!DOCTYPE html>
  <html>
   <head>
@@ -35,9 +35,14 @@
         $servlet.setId(${id})
     }
     </script>
+    <style type="text/css">
+    body{
+    font-size:16px;
+    }
+    </style>
   </head>
   <body>
-   <h2>File(s) recieved. Validation complete.</h2>
+   <h2>File recieved. Validation complete.</h2>
    <br/>
    <a href="/logFiles/xmlVerifierLog${id}.csv" download>Get log</a>
    <a href="xmlVerifier.vm" onclick="Reset()">Return</a>

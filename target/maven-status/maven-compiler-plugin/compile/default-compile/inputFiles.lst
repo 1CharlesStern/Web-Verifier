@@ -74,6 +74,7 @@
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/runtime/parser/node/ASTprocess.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/runtime/parser/node/ASTSetDirective.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/tools/view/servlet/ServletToolboxRuleSet.java
+/Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/edu/si/WebVerifier.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/runtime/visitor/BaseVisitor.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/tools/struts/SecureLinkTool.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/tools/view/ToolboxRuleSet.java
@@ -105,6 +106,7 @@
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/tools/generic/XmlTool.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/tools/view/context/ViewContext.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/tools/generic/LinkTool.java
+/Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/edu/si/VeloServlet.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/runtime/parser/node/ASTFloatingPointLiteral.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/tools/generic/ValueParser.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/tools/view/DataInfo.java
@@ -189,7 +191,6 @@
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/util/introspection/AbstractChainableUberspector.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/runtime/log/SystemLogChute.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/tools/view/servlet/ServletUtils.java
-/Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/edu/si/XMLvServ.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/runtime/parser/node/ASTDirective.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/tools/config/XmlFactoryConfiguration.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/context/InternalContextAdapterImpl.java
@@ -354,7 +355,6 @@
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/runtime/parser/node/ASTIndex.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/runtime/parser/node/Node.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/tools/view/tools/ViewRenderTool.java
-/Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/edu/si/xmlWebVerifier.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/app/event/implement/IncludeNotFound.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/runtime/parser/node/ASTEscape.java
 /Users/beth/Desktop/maven/wwwxmlverifier/src/main/java/org/apache/velocity/util/introspection/IntrospectorBase.java

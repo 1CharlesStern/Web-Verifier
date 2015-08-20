@@ -2,11 +2,11 @@
 *****************************************************
 Summary
 -------
-Generated at: 2015-08-14T13:31:36-04:00
-Notes: 13
+Generated at: 2015-08-20T08:14:15-04:00
+Notes: 12
 Binaries: 15
-Archives: 34
-Standards: 1526
+Archives: 36
+Standards: 1557
 
 Apache Licensed: 613
 Generated Documents: 0
@@ -14,7 +14,7 @@ Generated Documents: 0
 JavaDocs are generated and so license header is optional
 Generated files do not required license headers
 
-291 Unknown Licenses
+322 Unknown Licenses
 
 *******************************
 
@@ -22,12 +22,12 @@ Unapproved licenses:
 
   CONTRIBUTORS
   docs/api/package-list
+  Documentation/VeloServlet.txt
+  Documentation/VerifierComplete-vm.txt
+  Documentation/WebVerifier.txt
+  Documentation/xmlVerifier-vm.txt
   pom.xml
   src/main/java/org/apache/velocity/runtime/parser/BUILD_README.txt
-  src/main/java/resources/eMammalDeploymentManifest2015Final.sch
-  src/main/java/resources/eMammalDeploymentManifest2015Final.xsd
-  src/main/java/resources/WCSDeploymentManifest2015Final.xsd
-  src/main/java/resources/WCSDeploymentManifestFinal.sch
   src/main/webapp/WEB-INF/classes/resources/eMammalDeploymentManifest2015Final.sch
   src/main/webapp/WEB-INF/classes/resources/eMammalDeploymentManifest2015Final.xsd
   src/main/webapp/WEB-INF/classes/resources/WCSDeploymentManifest2015Final.xsd
@@ -295,21 +295,52 @@ Unapproved licenses:
   webapps/logFiles/rmLogFiles.sh
   webapps/logFiles/xmlVerifierLogBDUNU.csv
   webapps/logFiles/xmlVerifierLogBSGHD.csv
+  webapps/logFiles/xmlVerifierLogBTLFO.csv
   webapps/logFiles/xmlVerifierLogCDMVH.csv
+  webapps/logFiles/xmlVerifierLogCXLSV.csv
+  webapps/logFiles/xmlVerifierLogDJMBU.csv
+  webapps/logFiles/xmlVerifierLogEPMEE.csv
+  webapps/logFiles/xmlVerifierLogEPWNL.csv
+  webapps/logFiles/xmlVerifierLogFNCVI.csv
   webapps/logFiles/xmlVerifierLogFSPYK.csv
   webapps/logFiles/xmlVerifierLogGIAII.csv
+  webapps/logFiles/xmlVerifierLogGQKSZ.csv
   webapps/logFiles/xmlVerifierLogGWYXS.csv
+  webapps/logFiles/xmlVerifierLogICDCM.csv
+  webapps/logFiles/xmlVerifierLogIMZPR.csv
+  webapps/logFiles/xmlVerifierLogJBIHN.csv
   webapps/logFiles/xmlVerifierLogJFUKK.csv
   webapps/logFiles/xmlVerifierLogJNPOF.csv
+  webapps/logFiles/xmlVerifierLogKBPUW.csv
+  webapps/logFiles/xmlVerifierLogLVLHN.csv
+  webapps/logFiles/xmlVerifierLogNJSZG.csv
+  webapps/logFiles/xmlVerifierLogNTXBM.csv
   webapps/logFiles/xmlVerifierLogOZDWS.csv
+  webapps/logFiles/xmlVerifierLogPHOKX.csv
+  webapps/logFiles/xmlVerifierLogPZKGF.csv
   webapps/logFiles/xmlVerifierLogSBDPP.csv
   webapps/logFiles/xmlVerifierLogTKCAY.csv
+  webapps/logFiles/xmlVerifierLogTLOAH.csv
+  webapps/logFiles/xmlVerifierLogTMVEH.csv
+  webapps/logFiles/xmlVerifierLogVCSKE.csv
+  webapps/logFiles/xmlVerifierLogVUKQA.csv
+  webapps/logFiles/xmlVerifierLogWSAFE.csv
   webapps/logFiles/xmlVerifierLogXRGZQ.csv
   webapps/root/index.html
   webapps/usrFiles/BDUNU.xml
+  webapps/usrFiles/BTLFO.xml
+  webapps/usrFiles/ETXGN.xml
+  webapps/usrFiles/FNCVI.xml
   webapps/usrFiles/FSPYK.xml
+  webapps/usrFiles/HRBDY.xml
+  webapps/usrFiles/KGOMQ.xml
+  webapps/usrFiles/LVLHN.xml
+  webapps/usrFiles/NAOKS.xml
   webapps/usrFiles/PEFJQ.xml
+  webapps/usrFiles/RUSOD.xml
+  webapps/usrFiles/VUKQA.xml
   webapps/usrFiles/WGPOC.xml
+  webapps/usrFiles/WMHXP.xml
   WHY_TWO_JARS.txt
 
 *******************************
@@ -333,6 +364,8 @@ Archives:
  + lib/maven-ant-tasks-2.0.9.jar
  
  + lib/oro-2.0.8.jar
+ 
+ + lib/probatron.jar
  
  + lib/servletapi-2.3.jar
  
@@ -360,6 +393,8 @@ Archives:
  
  + src/main/java/lib/oro-2.0.8.jar
  
+ + src/main/java/lib/probatron.jar
+ 
  + src/main/java/lib/servletapi-2.3.jar
  
  + src/main/java/lib/test/hsqldb-1.7.1.jar
@@ -382,7 +417,7 @@ Archives:
  
  + velocity-1.7.jar
  
- + webapps/wwwxmlverifier-1.0-SNAPSHOT.war
+ + webapps/wwwxmlverifier-1.0.war
  
 *****************************************************
   Files with Apache License headers will be marked AL
@@ -1030,6 +1065,10 @@ Archives:
   AL    docs/user-guide.html
   AL    docs/vtl-reference-guide.html
   AL    docs/webapps.html
+ !????? Documentation/VeloServlet.txt
+ !????? Documentation/VerifierComplete-vm.txt
+ !????? Documentation/WebVerifier.txt
+ !????? Documentation/xmlVerifier-vm.txt
   AL    examples/app_example1/appendVELCP.bat
   AL    examples/app_example1/example.bat
   AL    examples/app_example1/Example.java
@@ -1074,17 +1113,17 @@ Archives:
   A     lib/log4j-1.2.12.jar
   A     lib/maven-ant-tasks-2.0.9.jar
   A     lib/oro-2.0.8.jar
+  A     lib/probatron.jar
   A     lib/servletapi-2.3.jar
   A     lib/test/hsqldb-1.7.1.jar
   A     lib/test/junit-3.8.1.jar
   A     lib/werken-xpath-0.9.4.jar
   N     LICENSE
-  N     NOTICE
  !????? pom.xml
   N     README.txt
   AL    src/changes/changes.xml
-  AL    src/main/java/edu/si/XMLvServ.java
-  AL    src/main/java/edu/si/xmlWebVerifier.java
+  AL    src/main/java/edu/si/VeloServlet.java
+  AL    src/main/java/edu/si/WebVerifier.java
   A     src/main/java/lib/antlr-2.7.5.jar
   A     src/main/java/lib/avalon-logkit-2.1.jar
   A     src/main/java/lib/commons-collections-3.2.1.jar
@@ -1094,6 +1133,7 @@ Archives:
   A     src/main/java/lib/log4j-1.2.12.jar
   A     src/main/java/lib/maven-ant-tasks-2.0.9.jar
   A     src/main/java/lib/oro-2.0.8.jar
+  A     src/main/java/lib/probatron.jar
   A     src/main/java/lib/servletapi-2.3.jar
   A     src/main/java/lib/test/hsqldb-1.7.1.jar
   A     src/main/java/lib/test/junit-3.8.1.jar
@@ -1477,10 +1517,6 @@ Archives:
   AL    src/main/java/org/apache/velocity/util/StringUtils.java
   AL    src/main/java/org/apache/velocity/util/TemplateNumber.java
   AL    src/main/java/org/apache/velocity/VelocityContext.java
- !????? src/main/java/resources/eMammalDeploymentManifest2015Final.sch
- !????? src/main/java/resources/eMammalDeploymentManifest2015Final.xsd
- !????? src/main/java/resources/WCSDeploymentManifest2015Final.xsd
- !????? src/main/java/resources/WCSDeploymentManifestFinal.sch
  !????? src/main/webapp/WEB-INF/classes/resources/eMammalDeploymentManifest2015Final.sch
  !????? src/main/webapp/WEB-INF/classes/resources/eMammalDeploymentManifest2015Final.xsd
   AL    src/main/webapp/WEB-INF/classes/resources/Verifiercomplete.vm
@@ -1937,22 +1973,53 @@ Archives:
  !????? webapps/logFiles/rmLogFiles.sh
  !????? webapps/logFiles/xmlVerifierLogBDUNU.csv
  !????? webapps/logFiles/xmlVerifierLogBSGHD.csv
+ !????? webapps/logFiles/xmlVerifierLogBTLFO.csv
  !????? webapps/logFiles/xmlVerifierLogCDMVH.csv
+ !????? webapps/logFiles/xmlVerifierLogCXLSV.csv
+ !????? webapps/logFiles/xmlVerifierLogDJMBU.csv
+ !????? webapps/logFiles/xmlVerifierLogEPMEE.csv
+ !????? webapps/logFiles/xmlVerifierLogEPWNL.csv
+ !????? webapps/logFiles/xmlVerifierLogFNCVI.csv
  !????? webapps/logFiles/xmlVerifierLogFSPYK.csv
  !????? webapps/logFiles/xmlVerifierLogGIAII.csv
+ !????? webapps/logFiles/xmlVerifierLogGQKSZ.csv
  !????? webapps/logFiles/xmlVerifierLogGWYXS.csv
+ !????? webapps/logFiles/xmlVerifierLogICDCM.csv
+ !????? webapps/logFiles/xmlVerifierLogIMZPR.csv
+ !????? webapps/logFiles/xmlVerifierLogJBIHN.csv
  !????? webapps/logFiles/xmlVerifierLogJFUKK.csv
  !????? webapps/logFiles/xmlVerifierLogJNPOF.csv
+ !????? webapps/logFiles/xmlVerifierLogKBPUW.csv
+ !????? webapps/logFiles/xmlVerifierLogLVLHN.csv
+ !????? webapps/logFiles/xmlVerifierLogNJSZG.csv
+ !????? webapps/logFiles/xmlVerifierLogNTXBM.csv
  !????? webapps/logFiles/xmlVerifierLogOZDWS.csv
+ !????? webapps/logFiles/xmlVerifierLogPHOKX.csv
+ !????? webapps/logFiles/xmlVerifierLogPZKGF.csv
  !????? webapps/logFiles/xmlVerifierLogSBDPP.csv
  !????? webapps/logFiles/xmlVerifierLogTKCAY.csv
+ !????? webapps/logFiles/xmlVerifierLogTLOAH.csv
+ !????? webapps/logFiles/xmlVerifierLogTMVEH.csv
+ !????? webapps/logFiles/xmlVerifierLogVCSKE.csv
+ !????? webapps/logFiles/xmlVerifierLogVUKQA.csv
+ !????? webapps/logFiles/xmlVerifierLogWSAFE.csv
  !????? webapps/logFiles/xmlVerifierLogXRGZQ.csv
  !????? webapps/root/index.html
  !????? webapps/usrFiles/BDUNU.xml
+ !????? webapps/usrFiles/BTLFO.xml
+ !????? webapps/usrFiles/ETXGN.xml
+ !????? webapps/usrFiles/FNCVI.xml
  !????? webapps/usrFiles/FSPYK.xml
+ !????? webapps/usrFiles/HRBDY.xml
+ !????? webapps/usrFiles/KGOMQ.xml
+ !????? webapps/usrFiles/LVLHN.xml
+ !????? webapps/usrFiles/NAOKS.xml
  !????? webapps/usrFiles/PEFJQ.xml
+ !????? webapps/usrFiles/RUSOD.xml
+ !????? webapps/usrFiles/VUKQA.xml
  !????? webapps/usrFiles/WGPOC.xml
-  A     webapps/wwwxmlverifier-1.0-SNAPSHOT.war
+ !????? webapps/usrFiles/WMHXP.xml
+  A     webapps/wwwxmlverifier-1.0.war
  !????? WHY_TWO_JARS.txt
   AL    xdocs/docs/build.xml
   AL    xdocs/docs/committers.xml
@@ -2062,6 +2129,113 @@ org.apache.velocity.util
 org.apache.velocity.util.introspection
 
 =======================================================================
+==Documentation/VeloServlet.txt
+=======================================================================
+Public Class VeloServlet extends VelocityViewServlet:
+
+Short for Velocity Servlet, it handles http requests from the web browser and returns a response based on the velocity template that invoked it.  It is capable of handling GET and POST requests.
+
+Dependencies:
+java.io.*
+javax.servlet.*
+javax.servlet.http.*
+org.apache.velocity.VelocityContext
+org.apache.velocity.app.VelocityEngine
+org.apache.velocity.tools.view.VelocityViewServlet
+
+Constructors:
+None. This servlet is ran inside of a servlet container, and as such does not require a constructor.
+
+Methods:
+public void init() throws ServletException
+Initializes the servlet.  Creates directories for user files and log files, named usrFiles and logFiles respectively.  It also creates a blank file to represent the file submitted by the user.  If these directories cannot be created, the program will throw an IOException.
+
+public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+Handles Http GET requests.  This method will return the velocity template that includes the POST form as MIME type text/html.
+
+public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+Handles Http POST requests and reformats them to pass onto the WebVerifier.  The method will read the file via request.getReader() and write the contents to the blank user file.  It will then pass the user file onto execute().
+
+public void execute(PrintWriter w, File xml) throws FileNotFoundException
+Executes WebVerifier with the specified PrintWriter and File.  If initialized by the doPost method, this will be the user file and the webpage.  The entirety of the program output will be contained within a html <p> element.  The program will throw a FileNotFoundException if it cannot create its log.
+
+public void destroy()
+Method required by all servlets upon their destruction.  This method does nothing.
+
+public String makeId()
+Creates a unique 5-character ID for the current session.  The log will be saved under the same ID.
+
+public String getId()
+Returns the ID for the current file.
+
+public void setId(String str)
+Sets the Id to a certain string.
+
+=======================================================================
+==Documentation/VerifierComplete-vm.txt
+=======================================================================
+The second of two webpages.  Called as a result of the servlet receiving a POST method.  This webpage displays the results of the validation process and gives an option to download a detailed log of the process or return to the previous webpage to validate a second file.
+
+=======================================================================
+==Documentation/WebVerifier.txt
+=======================================================================
+Public Class WebVerifier
+
+This class takes files and validates them against XML schema and schematron files.  It will output text indicating pass or fail, and write to a log in the form of comma separated values.
+
+Dependencies:
+org.xml.sax.ErrorHandler
+org.xml.sax.SAXException;
+org.xml.sax.SAXParseException;
+org.probatron.Driver;
+javax.xml.XMLConstants;
+javax.xml.transform.Source;
+javax.xml.transform.stream.StreamSource;
+javax.xml.validation.Schema;
+javax.xml.validation.SchemaFactory;
+javax.xml.validation.Validator;
+java.io.*;
+java.util.LinkedList;
+java.util.List;
+
+Constructors:
+public(String place, PrintWriter log, PrintWriter output, boolean isWCS)
+In addition to constructing the object, this checks if the file presented is actually a xml file.  If so, it then passes the file onto the "main" method.  The boolean statement indicates whether to use eMammal schema or WCS schema on the manifest.  This also is passed to the "main" method Verify.
+
+Methods:
+public void Verify(String place, PrintWriter log, PrintWriter output, boolean isWCS)
+This is the method that validates the manifest and writes the result to its logs.  It uses probation and the java specification for xml validation to do so.  The method initializes the validator programs and reads their output streams to determine the success of the validation.
+
+public File convertToFile(InputStream in)
+Because this program is stored as a web archive(.war), its resources can only be recalled as InputStreams.  In order to convert those streams to files, this method is called.  It creates a temporary file that holds the input stream data.  This is necessary in order for the schematron validation to run correctly.
+
+List<String>bustCommas(List<String> list)
+Due to the way comma separated values(.csv) files operate, all commas and quotes need to be escaped before they are exported. This method serves that purpose.  It will put quotes around every item in a List<String> so that it will be in an acceptable format for a spreadsheet application.
+
+Note: All following methods chop up the error streams from the verifiers and sort them into Lists to be exported to the log.  That way, a .csv log can easily be kept in sync when multiple errors occur.
+
+String xsdRow(String str)
+Chops up output streams from schema validation and returns the line number of an error.
+
+String xsdError(String str)
+Chops up output streams from schema validation and returns a short description of the validation error.
+
+String xsdCol(String str)
+Chops up output stream from schema validation and returns the character number of an error.
+
+String tronErr(String str)
+Chops up output stream from schematron validation and returns a short description of the validation error.
+
+String tronCol(String str)
+Chops up output stream from schematron validation and returns the character number of an error.
+
+
+=======================================================================
+==Documentation/xmlVerifier-vm.txt
+=======================================================================
+The first of two webpages.  The servlet will return this page automatically when it detects a GET request.  It lets the user select which organization to verify against, choose a file to upload, and upload it.  Uploading the file initializes the servlet getPost method and so moves to the next webpage.
+
+=======================================================================
 ==pom.xml
 =======================================================================
 <?xml version="1.0"?>
@@ -2076,7 +2250,7 @@ org.apache.velocity.util.introspection
   <groupId>edu.si</groupId>
   <packaging>war</packaging>
   <artifactId>wwwxmlverifier</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>wwwxmlverifier</name>
   <url>http://maven.apache.org</url>
   <properties>
@@ -2146,222 +2320,6 @@ files generated from .jjt.
 5) Finally, note that in order to create code that will compile with JDK 1.5,
 you will need to use JavaCC 3.2 or later (replaces variable "enumeration" with "e". (WGH)
 
-
-=======================================================================
-==src/main/java/resources/eMammalDeploymentManifest2015Final.sch
-=======================================================================
-<?xml version="1.0" encoding="UTF-8"?>
-<iso:schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:iso="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2" schemaVersion="ISO19757-3">
-    <iso:pattern id="required-fields-check">
-        <iso:rule context="CameraTrapDeployment">
-            <iso:assert
-                test="string-length(normalize-space(ProjectId)) &gt; 0">A camera deployment must have a project Id</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(ProjectName)) &gt; 0">A camera deployment must have a project name</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(ProjectLatitude)) &gt; 0">A camera deployment must have a project latitude</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(ProjectLongitude)) &gt; 0">A camera deployment must have a project longitude</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(CountryCode)) &gt; 0">A camera deployment must have a country code</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(SubProjectId)) &gt; 0">A camera deployment must have a sub-project Id</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(SubProjectName)) &gt; 0">A camera deployment must have a sub-project name</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(CameraDeploymentID)) &gt; 0">A camera deployment must have a camera deployment id</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(CameraSiteName)) &gt; 0">A camera deployment must have a camera site name</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(CameraDeploymentBeginDate)) &gt; 0">A camera deployment must have a Camera deployment begin date</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(CameraDeploymentEndDate)) &gt; 0">A camera deployment must have a camera deployment end date</iso:assert>
-            <iso:assert 
-                test="string-length(normalize-space(CameraFailureDetails)) &gt; 0">A camera deployment must have camera failure details</iso:assert>
-            <iso:assert 
-                test="string-length(normalize-space(ActualLatitude)) &gt; 0">A camera deployment must have an actual latitude</iso:assert>
-            <iso:assert 
-                test="string-length(normalize-space(ActualLongitude)) &gt; 0">A camera deployment must have an actual Longitude</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(Bait)) &gt; 0">A camera deployment must have a bait</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(Feature)) &gt; 0">A camera deployment must have a feature</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(AccessConstraints)) &gt; 0">A camera deployment must have Access Constraints</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(CameraID)) &gt; 0">A camera deployment must have a camera Id</iso:assert>
-        </iso:rule>
-    </iso:pattern>
-    
-    <iso:pattern id="required-fields-check-Owner">
-        <iso:rule context="CameraTrapDeployment/ProjectOwners/ProjectOwner">
-            <iso:assert
-                test="string-length(normalize-space(.)) &gt; 0">A camera deployment must have a project owner</iso:assert>  
-         </iso:rule>
-    </iso:pattern>
-    
-
-=======================================================================
-==src/main/java/resources/eMammalDeploymentManifest2015Final.xsd
-=======================================================================
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns="http://oris.si.edu/schema/v1/2015/02/28/ct/manifest"
-	xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified"
-	vc:minVersion="1.1">
-	<xs:element name="CameraTrapDeployment">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="ProjectId"/>
-				<xs:element name="ProjectName"/>
-				<xs:element name="ProjectObjectives"/>
-				<xs:element name="PublishDate"/>
-				<xs:element name="ProjectOwners">
-					<xs:complexType>
-						<xs:sequence maxOccurs="unbounded">
-							<xs:element name="ProjectOwner"/>
-							<xs:element name="ProjectOwnerEmail"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="PrincipalInvestigators">
-					<xs:complexType>
-						<xs:sequence maxOccurs="unbounded">
-							<xs:element name="PrincipalInvestigator"/>
-							<xs:element name="PrincipalInvestigatorEmail"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="ProjectContacts">
-					<xs:complexType>
-						<xs:sequence maxOccurs="unbounded">
-							<xs:element name="ProjectContact"/>
-							<xs:element name="ProjectContactEmail"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="ProjectLatitude"/>
-				<xs:element name="ProjectLongitude"/>
-				<xs:element name="CountryCode"/>
-				<xs:element name="ProjectDataAccessandUseConstraints"/>
-				<xs:element name="SubProjectId"/>
-				<xs:element name="SubProjectName"/>
-				<xs:element name="SubProjectDesign"/>
-				<xs:element name="PlotName"/>
-				<xs:element name="PlotTreatment"/>
-				<xs:element name="CameraDeploymentID"/>
-				<xs:element name="CameraSiteName"/>
-				<xs:element name="Originators">
-					<xs:complexType>
-						<xs:sequence maxOccurs="unbounded">
-
-=======================================================================
-==src/main/java/resources/WCSDeploymentManifest2015Final.xsd
-=======================================================================
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns="http://oris.si.edu/schema/v1/2015/02/28/ct/manifest"
-	xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified"
-	vc:minVersion="1.1">
-	<xs:element name="CameraTrapDeployment">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="ProjectId"/>
-				<xs:element name="ProjectName"/>
-				<xs:element name="ProjectObjectives"/>
-				<xs:element name="PublishDate"/>
-				<xs:element name="ProjectOwners">
-					<xs:complexType>
-						<xs:sequence maxOccurs="unbounded">
-							<xs:element name="ProjectOwner"/>
-							<xs:element name="ProjectOwnerEmail"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="PrincipalInvestigators">
-					<xs:complexType>
-						<xs:sequence maxOccurs="unbounded">
-							<xs:element name="PrincipalInvestigator"/>
-							<xs:element name="PrincipalInvestigatorEmail"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="ProjectContacts">
-					<xs:complexType>
-						<xs:sequence maxOccurs="unbounded">
-							<xs:element name="ProjectContact"/>
-							<xs:element name="ProjectContactEmail"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="ProjectLatitude"/>
-				<xs:element name="ProjectLongitude"/>
-				<xs:element name="CountryCode"/>
-				<xs:element name="ProjectDataAccessandUseConstraints"/>
-				<xs:element name="SubProjectId"/>
-				<xs:element name="SubProjectName"/>
-				<xs:element name="SubProjectDesign"/>
-				<xs:element name="PlotName"/>
-				<xs:element name="PlotTreatment"/>
-				<xs:element name="CameraDeploymentID"/>
-				<xs:element name="CameraSiteName"/>
-				<xs:element name="Originators">
-					<xs:complexType>
-						<xs:sequence maxOccurs="unbounded">
-
-=======================================================================
-==src/main/java/resources/WCSDeploymentManifestFinal.sch
-=======================================================================
-<?xml version="1.0" encoding="UTF-8"?>
-<iso:schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:iso="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2" schemaVersion="ISO19757-3">
-    <iso:pattern id="required-fields-check">
-        <iso:rule context="CameraTrapDeployment">
-            <iso:assert
-                test="string-length(normalize-space(ProjectId)) &gt; 0">A camera deployment must have a project Id</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(ProjectName)) &gt; 0">A camera deployment must have a project name</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(ProjectLatitude)) &gt; 0">A camera deployment must have a project latitude</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(ProjectLongitude)) &gt; 0">A camera deployment must have a project longitude</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(CountryCode)) &gt; 0">A camera deployment must have a country code</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(CameraDeploymentID)) &gt; 0">A camera deployment must have a camera deployment id</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(CameraSiteName)) &gt; 0">A camera deployment must have a camera site name</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(CameraDeploymentBeginDate)) &gt; 0">A camera deployment must have a Camera deployment begin date</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(CameraDeploymentEndDate)) &gt; 0">A camera deployment must have a camera deployment end date</iso:assert>
-            <iso:assert 
-                test="string-length(normalize-space(CameraFailureDetails)) &gt; 0">A camera deployment must have camera failure details</iso:assert>
-            <iso:assert 
-                test="string-length(normalize-space(ActualLatitude)) &gt; 0">A camera deployment must have an actual latitude</iso:assert>
-            <iso:assert 
-                test="string-length(normalize-space(ActualLongitude)) &gt; 0">A camera deployment must have an actual Longitude</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(Bait)) &gt; 0">A camera deployment must have a bait</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(Feature)) &gt; 0">A camera deployment must have a feature</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(AccessConstraints)) &gt; 0">A camera deployment must have Access Constraints</iso:assert>
-            <iso:assert
-                test="string-length(normalize-space(CameraID)) &gt; 0">A camera deployment must have a camera Id</iso:assert>       
-        </iso:rule>
-    </iso:pattern>
-    
-    <iso:pattern id="required-fields-check-Owner">
-        <iso:rule context="CameraTrapDeployment/ProjectOwners/ProjectOwner">
-            <iso:assert
-                test="string-length(normalize-space(.)) &gt; 0">A camera deployment must have a project owner</iso:assert>  
-        </iso:rule>
-    </iso:pattern>
-    
-    <iso:pattern id="required-fields-check-Owneremail">
-        <iso:rule context="CameraTrapDeployment/ProjectOwners/ProjectOwnerEmail">
-            <iso:assert
-                test="string-length(normalize-space(.)) &gt; 0">A camera deployment must have a project owner email</iso:assert>          
 
 =======================================================================
 ==src/main/webapp/WEB-INF/classes/resources/eMammalDeploymentManifest2015Final.sch
@@ -8010,7 +7968,91 @@ fi
 =======================================================================
 
 =======================================================================
+==webapps/logFiles/xmlVerifierLogBTLFO.csv
+=======================================================================
+
+=======================================================================
 ==webapps/logFiles/xmlVerifierLogCDMVH.csv
+=======================================================================
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogCXLSV.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+N," '2014-0sdf' is not a valid value for 'date'.","N/A"," 17"," 67"
+N," The value '2014-0sdf' of element 'CameraDeploymentBeginDate' is not valid.","N/A"," 17"," 67"
+N," Value '' is not facet-valid with respect to enumeration '[Functioning, Unknown Failure, Wildlife Damage, Vandalism/Theft, Memory Card/Film Failure, Camera Hardware Failure]'. It must be a value from the enumeration.","N/A"," 22"," 48"
+N," The value '' of element 'CameraFailureDetails' is not valid.","N/A"," 22"," 48"
+N," Value '' is not facet-valid with respect to enumeration '[No Bait, Other Bait, Acoustic, Visual, Meat, Scent]'. It must be a value from the enumeration.","N/A"," 23"," 16"
+N," The value '' of element 'Bait' is not valid.","N/A"," 23"," 16"
+N," Value '' is not facet-valid with respect to enumeration '[Not Entered, Road, paved, Road, dirt, Trail, hiking/people, Trail, game, Road underpass/overpass/bridge, Culvert, Burrow, Nest site, Carcass, Water source/Spring, Fruiting tree, Other]'. It must be a value from the enumeration.","N/A"," 24"," 22"
+N," The value '' of element 'Feature' is not valid.","N/A"," 24"," 22"
+N," Invalid content was found starting with element 'ImageSequenceBeginTime'. One of '{ImageSequenceId}' is expected.","N/A"," 31"," 27"
+N," Invalid content was found starting with element 'SpeciesId'. One of '{IUCNId}' is expected.","N/A"," 35"," 18"
+N," Invalid content was found starting with element 'SpeciesId'. One of '{IUCNId}' is expected.","N/A"," 41"," 18"
+N," Invalid content was found starting with element 'SpeciesId'. One of '{IUCNId}' is expected.","N/A"," 49"," 18"
+N," Invalid content was found starting with element 'SpeciesId'. One of '{IUCNId}' is expected.","N/A"," 55"," 18"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 64"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 69"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 74"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 79"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 84"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 89"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 94"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 99"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 104"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 109"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 114"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 119"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 124"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 129"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 134"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 139"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 144"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 149"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 154"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 159"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 164"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 169"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 174"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 179"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 184"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 189"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 194"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 199"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 204"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 209"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 214"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 219"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 224"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 229"," 27"
+N," Invalid content was found starting with element 'ImageInterestRanking'. One of '{ImageDateTime}' is expected.","N/A"," 234"," 27"
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogDJMBU.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+Y,N/A,N/A,N/A,N/A
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogEPMEE.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+N," Invalid content was found starting with element 'ImageOrder'. One of '{ImageDateTime}' is expected.","N/A"," 171"," 25"
+N," Invalid content was found starting with element 'ImageOrder'. One of '{ImageDateTime}' is expected.","N/A"," 200"," 25"
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogEPWNL.csv
+=======================================================================
+File,Location,Pass(Y/N),Error,ErrorLocation,Row,Column
+EPWNL.xml,/Users/beth/Desktop/maven/wwwxmlverifier/webapps/usrFiles/EPWNL.xml,N,Invalid File location,N/A,N/A,N/A
+EPWNL.xml,/Users/beth/Desktop/maven/wwwxmlverifier/webapps/usrFiles/EPWNL.xml,Y,N/A,N/A,N/A,N/A
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogFNCVI.csv
 =======================================================================
 
 =======================================================================
@@ -8022,8 +8064,36 @@ fi
 =======================================================================
 
 =======================================================================
+==webapps/logFiles/xmlVerifierLogGQKSZ.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+Y,N/A,N/A,N/A,N/A
+
+=======================================================================
 ==webapps/logFiles/xmlVerifierLogGWYXS.csv
 =======================================================================
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogICDCM.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+Y,N/A,N/A,N/A,N/A
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogIMZPR.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+Y,N/A,N/A,N/A,N/A
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogJBIHN.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+Y,N/A,N/A,N/A,N/A
 
 =======================================================================
 ==webapps/logFiles/xmlVerifierLogJFUKK.csv
@@ -8034,8 +8104,47 @@ fi
 =======================================================================
 
 =======================================================================
+==webapps/logFiles/xmlVerifierLogKBPUW.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+Y,N/A,N/A,N/A,N/A
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogLVLHN.csv
+=======================================================================
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogNJSZG.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+Y,N/A,N/A,N/A,N/A
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogNTXBM.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+Y,N/A,N/A,N/A,N/A
+
+=======================================================================
 ==webapps/logFiles/xmlVerifierLogOZDWS.csv
 =======================================================================
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogPHOKX.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+Y,N/A,N/A,N/A,N/A
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogPZKGF.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+Y,N/A,N/A,N/A,N/A
 
 =======================================================================
 ==webapps/logFiles/xmlVerifierLogSBDPP.csv
@@ -8044,6 +8153,39 @@ fi
 =======================================================================
 ==webapps/logFiles/xmlVerifierLogTKCAY.csv
 =======================================================================
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogTLOAH.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+Y,N/A,N/A,N/A,N/A
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogTMVEH.csv
+=======================================================================
+File,Location,Pass(Y/N),Error,ErrorLocation,Row,Column
+TMVEH.xml,/Users/beth/Desktop/maven/wwwxmlverifier/webapps/usrFiles/TMVEH.xml,N,Invalid File location,N/A,N/A,N/A
+TMVEH.xml,/Users/beth/Desktop/maven/wwwxmlverifier/webapps/usrFiles/TMVEH.xml,Y,N/A,N/A,N/A,N/A
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogVCSKE.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+N," Invalid content was found starting with element 'ImageOrder'. One of '{ImageDateTime}' is expected.","N/A"," 171"," 25"
+N," Invalid content was found starting with element 'ImageOrder'. One of '{ImageDateTime}' is expected.","N/A"," 200"," 25"
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogVUKQA.csv
+=======================================================================
+
+=======================================================================
+==webapps/logFiles/xmlVerifierLogWSAFE.csv
+=======================================================================
+Pass(Y/N),Error,ErrorLocation,Row,Column
+N,Invalid File location,N/A,N/A,N/A
+Y,N/A,N/A,N/A,N/A
 
 =======================================================================
 ==webapps/logFiles/xmlVerifierLogXRGZQ.csv
@@ -8058,12 +8200,124 @@ fi
    <h3>Hello!</h3>
    <p>This page is a stand-in for a page linking to the si.edu xmlVerifier service.  This service is designed to verify camera trap data. Please click the link below to begin the process.
    </p>
-   <a href="http://localhost:8080/wwwxmlverifier-1.0-SNAPSHOT/ROOT/xmlVerifier.vm">Click here</a>
+   <a href="http://localhost:8080/wwwxmlverifier-1.0/ROOT/xmlVerifier.vm">Click here</a>
   </body>
  </html>
 
 =======================================================================
 ==webapps/usrFiles/BDUNU.xml
+=======================================================================
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="WCSDeploymentManifest2015Final.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<CameraTrapDeployment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="WCSDeploymentManifest2015Final.xsd">
+    <ProjectId>BO-14</ProjectId>
+    <ProjectName>Mid-Madidi River Jaguar Survey 2009</ProjectName>
+    <ProjectObjectives>Dry Season Survey of mid-Madidi River (Jun-Aug) in 2009</ProjectObjectives>
+    <PublishDate>2015-06-25</PublishDate>
+    <ProjectOwners>
+        <ProjectOwner>WCS</ProjectOwner>
+        <ProjectOwnerEmail>wcsemail</ProjectOwnerEmail>
+        <ProjectOwner>Owner2</ProjectOwner>
+        <ProjectOwnerEmail>Owner2Email</ProjectOwnerEmail>
+    </ProjectOwners>
+    <PrincipalInvestigators>
+        <PrincipalInvestigator>Robert Wallace</PrincipalInvestigator>
+        <PrincipalInvestigatorEmail>rwallace@wcs.org</PrincipalInvestigatorEmail>
+        <PrincipalInvestigator>PI2</PrincipalInvestigator>
+        <PrincipalInvestigatorEmail>PI2Email</PrincipalInvestigatorEmail>
+    </PrincipalInvestigators>
+    <ProjectContacts>
+        <ProjectContact>Guido Ayala</ProjectContact>
+        <ProjectContactEmail>gayala@wcs.org</ProjectContactEmail>
+        <ProjectContact>ProjectContact2</ProjectContact>
+        <ProjectContactEmail>ProjectContact2Email</ProjectContactEmail>
+    </ProjectContacts>
+    <ProjectLatitude>37.62999</ProjectLatitude>
+    <ProjectLongitude>-79.298753</ProjectLongitude>
+    <CountryCode>BOL</CountryCode>
+    <ProjectDataAccessandUseConstraints>TBD</ProjectDataAccessandUseConstraints>
+    <SubProjectId></SubProjectId>
+    <SubProjectName></SubProjectName>
+    <SubProjectDesign></SubProjectDesign>
+    <PlotName></PlotName>
+    <PlotTreatment></PlotTreatment>
+    <CameraDeploymentID>PDM-1-09-1-205</CameraDeploymentID>
+    <CameraSiteName>PDM-1-09-1-205</CameraSiteName>
+    <Originators>
+        <OriginatorName>testORiginator1</OriginatorName>
+        <OriginatorName>testOriginator2</OriginatorName>
+    </Originators>
+    <ProposedCameraDeploymentBeginDate></ProposedCameraDeploymentBeginDate>
+    <ProposedCameraDeploymentEndDate></ProposedCameraDeploymentEndDate>
+    <ProposedLatitude></ProposedLatitude>
+    <ProposedLongitude></ProposedLongitude>
+    <CameraDeploymentBeginDate>2009-05-26</CameraDeploymentBeginDate>
+    <CameraDeploymentEndDate>2009-06-21</CameraDeploymentEndDate>
+    <CameraDeploymentNotes></CameraDeploymentNotes>
+    <ActualLatitude>-12.886</ActualLatitude>
+    <ActualLongitude>-67.599</ActualLongitude>
+
+=======================================================================
+==webapps/usrFiles/BTLFO.xml
+=======================================================================
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="WCSDeploymentManifest2015Final.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<CameraTrapDeployment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="WCSDeploymentManifest2015Final.xsd">
+    <ProjectId>BO-14</ProjectId>
+    <ProjectName>Mid-Madidi River Jaguar Survey 2009</ProjectName>
+    <ProjectObjectives>Dry Season Survey of mid-Madidi River (Jun-Aug) in 2009</ProjectObjectives>
+    <PublishDate>2015-06-25</PublishDate>
+    <ProjectOwners>
+        <ProjectOwner>WCS</ProjectOwner>
+        <ProjectOwnerEmail>wcsemail</ProjectOwnerEmail>
+        <ProjectOwner>Owner2</ProjectOwner>
+        <ProjectOwnerEmail>Owner2Email</ProjectOwnerEmail>
+    </ProjectOwners>
+    <PrincipalInvestigators>
+        <PrincipalInvestigator>Robert Wallace</PrincipalInvestigator>
+        <PrincipalInvestigatorEmail>rwallace@wcs.org</PrincipalInvestigatorEmail>
+        <PrincipalInvestigator>PI2</PrincipalInvestigator>
+        <PrincipalInvestigatorEmail>PI2Email</PrincipalInvestigatorEmail>
+    </PrincipalInvestigators>
+    <ProjectContacts>
+        <ProjectContact>Guido Ayala</ProjectContact>
+        <ProjectContactEmail>gayala@wcs.org</ProjectContactEmail>
+        <ProjectContact>ProjectContact2</ProjectContact>
+        <ProjectContactEmail>ProjectContact2Email</ProjectContactEmail>
+    </ProjectContacts>
+    <ProjectLatitude>37.62999</ProjectLatitude>
+    <ProjectLongitude>-79.298753</ProjectLongitude>
+    <CountryCode>BOL</CountryCode>
+    <ProjectDataAccessandUseConstraints>TBD</ProjectDataAccessandUseConstraints>
+    <SubProjectId></SubProjectId>
+    <SubProjectName></SubProjectName>
+    <SubProjectDesign></SubProjectDesign>
+    <PlotName></PlotName>
+    <PlotTreatment></PlotTreatment>
+    <CameraDeploymentID>PDM-1-09-1-205</CameraDeploymentID>
+    <CameraSiteName>PDM-1-09-1-205</CameraSiteName>
+    <Originators>
+        <OriginatorName>testORiginator1</OriginatorName>
+        <OriginatorName>testOriginator2</OriginatorName>
+    </Originators>
+    <ProposedCameraDeploymentBeginDate></ProposedCameraDeploymentBeginDate>
+    <ProposedCameraDeploymentEndDate></ProposedCameraDeploymentEndDate>
+    <ProposedLatitude></ProposedLatitude>
+    <ProposedLongitude></ProposedLongitude>
+    <CameraDeploymentBeginDate>2009-05-26</CameraDeploymentBeginDate>
+    <CameraDeploymentEndDate>2009-06-21</CameraDeploymentEndDate>
+    <CameraDeploymentNotes></CameraDeploymentNotes>
+    <ActualLatitude>-12.886</ActualLatitude>
+    <ActualLongitude>-67.599</ActualLongitude>
+
+=======================================================================
+==webapps/usrFiles/ETXGN.xml
+=======================================================================
+
+=======================================================================
+==webapps/usrFiles/FNCVI.xml
 =======================================================================
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="WCSDeploymentManifest2015Final.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -8171,11 +8425,139 @@ fi
     <ActualLongitude>-67.599</ActualLongitude>
 
 =======================================================================
+==webapps/usrFiles/HRBDY.xml
+=======================================================================
+
+=======================================================================
+==webapps/usrFiles/KGOMQ.xml
+=======================================================================
+
+=======================================================================
+==webapps/usrFiles/LVLHN.xml
+=======================================================================
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="WCSDeploymentManifest2015Final.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<CameraTrapDeployment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="WCSDeploymentManifest2015Final.xsd">
+    <ProjectId>BO-14</ProjectId>
+    <ProjectName>Mid-Madidi River Jaguar Survey 2009</ProjectName>
+    <ProjectObjectives>Dry Season Survey of mid-Madidi River (Jun-Aug) in 2009</ProjectObjectives>
+    <PublishDate>2015-06-25</PublishDate>
+    <ProjectOwners>
+        <ProjectOwner>WCS</ProjectOwner>
+        <ProjectOwnerEmail>wcsemail</ProjectOwnerEmail>
+        <ProjectOwner>Owner2</ProjectOwner>
+        <ProjectOwnerEmail>Owner2Email</ProjectOwnerEmail>
+    </ProjectOwners>
+    <PrincipalInvestigators>
+        <PrincipalInvestigator>Robert Wallace</PrincipalInvestigator>
+        <PrincipalInvestigatorEmail>rwallace@wcs.org</PrincipalInvestigatorEmail>
+        <PrincipalInvestigator>PI2</PrincipalInvestigator>
+        <PrincipalInvestigatorEmail>PI2Email</PrincipalInvestigatorEmail>
+    </PrincipalInvestigators>
+    <ProjectContacts>
+        <ProjectContact>Guido Ayala</ProjectContact>
+        <ProjectContactEmail>gayala@wcs.org</ProjectContactEmail>
+        <ProjectContact>ProjectContact2</ProjectContact>
+        <ProjectContactEmail>ProjectContact2Email</ProjectContactEmail>
+    </ProjectContacts>
+    <ProjectLatitude>37.62999</ProjectLatitude>
+    <ProjectLongitude>-79.298753</ProjectLongitude>
+    <CountryCode>BOL</CountryCode>
+    <ProjectDataAccessandUseConstraints>TBD</ProjectDataAccessandUseConstraints>
+    <SubProjectId></SubProjectId>
+    <SubProjectName></SubProjectName>
+    <SubProjectDesign></SubProjectDesign>
+    <PlotName></PlotName>
+    <PlotTreatment></PlotTreatment>
+    <CameraDeploymentID>PDM-1-09-1-205</CameraDeploymentID>
+    <CameraSiteName>PDM-1-09-1-205</CameraSiteName>
+    <Originators>
+        <OriginatorName>testORiginator1</OriginatorName>
+        <OriginatorName>testOriginator2</OriginatorName>
+    </Originators>
+    <ProposedCameraDeploymentBeginDate></ProposedCameraDeploymentBeginDate>
+    <ProposedCameraDeploymentEndDate></ProposedCameraDeploymentEndDate>
+    <ProposedLatitude></ProposedLatitude>
+    <ProposedLongitude></ProposedLongitude>
+    <CameraDeploymentBeginDate>2009-05-26</CameraDeploymentBeginDate>
+    <CameraDeploymentEndDate>2009-06-21</CameraDeploymentEndDate>
+    <CameraDeploymentNotes></CameraDeploymentNotes>
+    <ActualLatitude>-12.886</ActualLatitude>
+    <ActualLongitude>-67.599</ActualLongitude>
+
+=======================================================================
+==webapps/usrFiles/NAOKS.xml
+=======================================================================
+
+=======================================================================
 ==webapps/usrFiles/PEFJQ.xml
 =======================================================================
 
 =======================================================================
+==webapps/usrFiles/RUSOD.xml
+=======================================================================
+
+=======================================================================
+==webapps/usrFiles/VUKQA.xml
+=======================================================================
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="WCSDeploymentManifest2015Final.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<CameraTrapDeployment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="WCSDeploymentManifest2015Final.xsd">
+    <ProjectId>BO-14</ProjectId>
+    <ProjectName>Mid-Madidi River Jaguar Survey 2009</ProjectName>
+    <ProjectObjectives>Dry Season Survey of mid-Madidi River (Jun-Aug) in 2009</ProjectObjectives>
+    <PublishDate>2015-06-25</PublishDate>
+    <ProjectOwners>
+        <ProjectOwner>WCS</ProjectOwner>
+        <ProjectOwnerEmail>wcsemail</ProjectOwnerEmail>
+        <ProjectOwner>Owner2</ProjectOwner>
+        <ProjectOwnerEmail>Owner2Email</ProjectOwnerEmail>
+    </ProjectOwners>
+    <PrincipalInvestigators>
+        <PrincipalInvestigator>Robert Wallace</PrincipalInvestigator>
+        <PrincipalInvestigatorEmail>rwallace@wcs.org</PrincipalInvestigatorEmail>
+        <PrincipalInvestigator>PI2</PrincipalInvestigator>
+        <PrincipalInvestigatorEmail>PI2Email</PrincipalInvestigatorEmail>
+    </PrincipalInvestigators>
+    <ProjectContacts>
+        <ProjectContact>Guido Ayala</ProjectContact>
+        <ProjectContactEmail>gayala@wcs.org</ProjectContactEmail>
+        <ProjectContact>ProjectContact2</ProjectContact>
+        <ProjectContactEmail>ProjectContact2Email</ProjectContactEmail>
+    </ProjectContacts>
+    <ProjectLatitude>37.62999</ProjectLatitude>
+    <ProjectLongitude>-79.298753</ProjectLongitude>
+    <CountryCode>BOL</CountryCode>
+    <ProjectDataAccessandUseConstraints>TBD</ProjectDataAccessandUseConstraints>
+    <SubProjectId></SubProjectId>
+    <SubProjectName></SubProjectName>
+    <SubProjectDesign></SubProjectDesign>
+    <PlotName></PlotName>
+    <PlotTreatment></PlotTreatment>
+    <CameraDeploymentID>PDM-1-09-1-205</CameraDeploymentID>
+    <CameraSiteName>PDM-1-09-1-205</CameraSiteName>
+    <Originators>
+        <OriginatorName>testORiginator1</OriginatorName>
+        <OriginatorName>testOriginator2</OriginatorName>
+    </Originators>
+    <ProposedCameraDeploymentBeginDate></ProposedCameraDeploymentBeginDate>
+    <ProposedCameraDeploymentEndDate></ProposedCameraDeploymentEndDate>
+    <ProposedLatitude></ProposedLatitude>
+    <ProposedLongitude></ProposedLongitude>
+    <CameraDeploymentBeginDate>2009-05-26</CameraDeploymentBeginDate>
+    <CameraDeploymentEndDate>2009-06-21</CameraDeploymentEndDate>
+    <CameraDeploymentNotes></CameraDeploymentNotes>
+    <ActualLatitude>-12.886</ActualLatitude>
+    <ActualLongitude>-67.599</ActualLongitude>
+
+=======================================================================
 ==webapps/usrFiles/WGPOC.xml
+=======================================================================
+
+=======================================================================
+==webapps/usrFiles/WMHXP.xml
 =======================================================================
 
 =======================================================================
