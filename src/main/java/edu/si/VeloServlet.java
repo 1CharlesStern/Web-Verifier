@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2015 Smithsonian Institution.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -25,7 +25,10 @@
  * license terms. For a complete copy of all copyright and license terms, including
  * those of third-party libraries, please see the product release notes.
  *
- */
+ *@author Charles Stern 1Charlesstern@gmail.com
+ *@version 1.0
+ *@since 2015-8-21
+ * */
 package edu.si;
 
 import org.apache.velocity.VelocityContext;
@@ -48,7 +51,13 @@ public class VeloServlet extends VelocityViewServlet {
     final String nl = System.getProperty("line.separator");
 
     @Override
-    //Initialize servlet
+    /**
+     * Initialize servlet
+     *
+     * <p>
+     *    This method is initially used by the servlet container to start the servlet.  It is called when the servlet container deems appropriate to use this servlet.
+     * </p>
+     */
     public void init() throws ServletException {
         ve.init();
         ID=makeId();
@@ -67,7 +76,14 @@ public class VeloServlet extends VelocityViewServlet {
         }
     }
     @Override
-    //returns form that allows user to upload a file
+    /**
+     * Returns form that allows user to upload a file
+     *
+     * @param request request from web browser via HTTP
+     * @param response response to web browser via HTTP
+     * @Exception ServletException
+     * @Exception IOException
+     */
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
             throws ServletException, IOException {
@@ -77,7 +93,14 @@ public class VeloServlet extends VelocityViewServlet {
         out.close();
     }
     @Override
-    //accepts user file from html form, and returns result after processing
+    /**
+     * Accepts user file from html form, and returns result after processing
+     *
+     * @param request request from web browser via HTTP
+     * @param response response to web browser via HTTP
+     * @Exception ServletException
+     * @Exception IOException
+     */
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
       PrintWriter out = response.getWriter();
           response.setContentType("text/html");
@@ -109,13 +132,11 @@ public class VeloServlet extends VelocityViewServlet {
         uFileFiller.flush();
         uFileFiller.close();
         xmlFile.close();
-        //By using these println statements, the output text goes into a <p> instead of out in the open.
-        // Technically this isn't necessary, but better safe than sorry.
         out.println("<p>"+nl+"Results of " + fileName + ": ");
         try {
             execute(out, uFile);
         }catch (IOException e) {
-            out.append("Error. Log file could not be created.");//Note: add functionality to continue without log
+            out.append("Error. Log file could not be created.");
             e.printStackTrace();
         }
         out.println("</p>" + nl + "</body>" + nl + "</html>");
@@ -126,19 +147,32 @@ public class VeloServlet extends VelocityViewServlet {
         out.close();
         }
 
+    /**
+     * When the servlet is taken out of service by the servlet container
+     * @see javax.servlet.Servlet
+     */
     public void destroy() {
     }
 
-    //Passes the file, log, and html output to the xmlWebVerifier(ported from desktop version)
+    /**
+     * Passes the file, log, and html output to the WebVerifier
+     * @param w Outputs to web page
+     * @param xml File submitted by the user via HTTP
+     * @throws FileNotFoundException
+     * @see edu.si.WebVerifier
+     */
     public void execute(PrintWriter w, File xml) throws FileNotFoundException{
             PrintWriter log = new PrintWriter(new File("webapps/logFiles/xmlVerifierLog"+getId()+".csv"));
-            //initial values
+            //log headers
             log.println("Pass(Y/N),Error,ErrorLocation,Row,Column");
             new WebVerifier(xml.getAbsolutePath(), log, w, isWCS);
         log.close();
     }
 
-    //Creates a unique ID under which the user's log and submitted file are kept. Logs should be removed periodically.
+    /**
+     * Creates a unique ID under which the user's log and submitted file are kept. Logs should be removed periodically.
+     * @return unique 5-character alphabetic ID
+     */
     public String makeId(){
 
         String text = "";
@@ -148,11 +182,18 @@ public class VeloServlet extends VelocityViewServlet {
             text += possible.charAt((int)Math.floor(Math.random() * possible.length()));
         return text;
     }
-
+    /**
+     *Gets previously made ID
+     *@return unique 5-character alphabetic ID
+     */
     public String getId(){
+        if(ID.equals(""))
+            makeId();
         return ID;
     }
-
+    /**
+     *Set unique ID to certain String
+     */
     public void setId(String str){ID=str;}
 
 }
