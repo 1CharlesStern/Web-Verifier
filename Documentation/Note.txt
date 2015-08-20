@@ -1,0 +1,1 @@
+This project uses the Apache Maven standard directory layout.  As such, it can be built by anyone using Maven.
